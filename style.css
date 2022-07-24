@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Noto+Sans+JP:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Edu+VIC+WA+NT+Beginner&family=Noto+Sans+JP:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+nav {
+  background: #434343;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  padding: 8px 13px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background: pink;
+}
+
+.container {
+  background-image: url(./assets/img/imagestock_46106920.png);
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.content h1 {
+  font-size: 60px;
+  font-weight: bold;
+
+  margin-bottom: 30px;
+  color: #fcffe6;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.content span {
+  color: black;
+  border: 2px solid black;
+  background: white;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.content_text {
+  padding-bottom: 20px;
+  margin: 10px 0;
+}
+
+.content {
+  margin-top: 10%;
+  margin-left: 10%;
+  justify-content: center;
+}
+
+.content .btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #fcffe6, #d3f261);
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content .img-book {
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+}
+
+.out_team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.out_team .card {
+  width: 330px;
+  height: 416px;
+  padding: 60px 30px;
+  margin: 20px;
+  background: #f2f3f7;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffff;
+  border-radius: 20px;
+}
+
+.out_team .card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.out_team .card .content .img1 {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.out_team .card .content .img1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.out_team .card .content:hover {
+  padding-top: 10px;
+}
+.out_team .card .content .content1 {
+  text-align: center;
+}
+#h1 {
+  font-family: "Allura", cursive;
+  font-size: 50px;
+}
+
+.popup {
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 1;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.popup-content {
+  background-color: #ffff;
+  margin-right: 10px;
+  width: 600px;
+  text-align: center;
+  display: block;
+
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#click:checked ~ .popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn_start {
+  margin-left: 10px;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.btn_start a {
+  background-color: #33691e;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px 50px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.btn_start a::after,
+.btn_start a::before {
+  content: "";
+  position: absolute;
+  opacity: 0.2;
+  background: #827717;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+  color: red;
+}
+
+.btn_start a:hover {
+  transform: translate(-12px, -12px);
+}
+
+.btn_start a::after {
+  transform: translate(6px, 6px);
+}
+
+
+.btn_start a::before {
+  transform: translate(12px, 12px);
+}
+
+
+
+
